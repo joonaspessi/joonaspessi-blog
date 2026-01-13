@@ -1,0 +1,21 @@
+{{ define "main" }}
+<article class="article-card">
+  <header class="article-header">
+    <p class="article-meta">
+      {{ .Date.Format "2006-01-02" }}
+      {{ with .Params.author }}<span class="separator">|</span> {{ . }}{{ end }}
+    </p>
+    <h1 class="article-title">{{ .Title }}</h1>
+    {{ with .Description }}
+    <p class="article-description">{{ . }}</p>
+    {{ end }}
+    <p class="header-separator">&#x254C;&#x254C;&#x254C;&#x254C;</p>
+  </header>
+
+  <div class="prose">
+    {{ .Content }}
+  </div>
+
+  <p class="footer-separator">&#x254C;&#x254C; END &#x254C;&#x254C;</p>
+</article>
+{{ end }}

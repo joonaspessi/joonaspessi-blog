@@ -1,0 +1,34 @@
+{{ define "main" }}
+{{ if .Content }}
+{{/* Section with content (About, Resume) */}}
+<article class="article-card">
+  <header class="article-header">
+    <h1 class="article-title">{{ .Title }}</h1>
+    <p class="header-separator">&#x254C;&#x254C;&#x254C;&#x254C;</p>
+  </header>
+
+  <div class="prose">
+    {{ .Content }}
+  </div>
+</article>
+{{ else }}
+{{/* Section with sub-pages (Blog) */}}
+<div class="article-list">
+  <h1 class="page-title">{{ .Title }}</h1>
+
+  {{ range .Pages }}
+  <article class="article-list-item">
+    <h2 class="article-list-title">
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </h2>
+    <p class="article-list-meta">
+      {{ .Date.Format "2006-01-02" }}
+    </p>
+    {{ with .Description }}
+    <p class="article-list-summary">{{ . }}</p>
+    {{ end }}
+  </article>
+  {{ end }}
+</div>
+{{ end }}
+{{ end }}

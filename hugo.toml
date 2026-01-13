@@ -1,0 +1,13 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Joonas Pessi'
+
+[params]
+  description = 'A personal blog about software and technology.'
+  author = 'Joonas Pessi'
+
+[markup]
+  [markup.highlight]
+    style = 'github'
+    lineNos = false
+    noClasses = false

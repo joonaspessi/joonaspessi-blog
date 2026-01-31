@@ -1,11 +1,11 @@
 ---
 title: "Building a Pathfinding Visualizer in Rust"
-date: 2024-01-12
+date: 2025-12-26
 description: "An interactive playground for exploring how different pathfinding algorithms navigate through procedurally generated caves."
 author: "Joonas Pessi"
 ---
 
-I recently built a pathfinding visualizer in Rust as a way to better understand how different graph traversal algorithms work. There's something satisfying about watching an algorithm explore a maze in real-time, seeing the frontier expand and contract as it searches for the optimal path.
+I recently built a pathfinding visualizer in Rust as a way to better understand how different graph traversal algorithms work. There's something satisfying about watching an algorithm explore a maze in real-time, seeing the frontier expand as it searches for the optimal path.
 
 You can try it yourself at [joonaspessi.github.io/path_finding](https://joonaspessi.github.io/path_finding/).
 
@@ -19,11 +19,11 @@ The visualizer implements five different pathfinding algorithms, each with its o
 - **Breadth-First Search** explores level by level, simple but effective for unweighted grids
 - **Depth-First Search** dives deep before backtracking, often finding suboptimal paths
 
-The difference in exploration patterns is striking. Dijkstra spreads out like water, while A* cuts a focused path toward the goal.
-
 ## Implementation
 
-All algorithms implement a common trait that standardizes how they execute:
+Source code for the implementation can be found from github [joonaspessi/path_finding](https://github.com/joonaspessi/path_finding)
+
+All algorithms implement a common [trait](https://github.com/joonaspessi/path_finding/blob/main/src/pathfinding.rs#L12-L31) that standardizes how they execute:
 
 ```rust
 pub trait PathfindingAlgorithm {
@@ -36,14 +36,6 @@ pub trait PathfindingAlgorithm {
 ```
 
 This design makes it trivial to swap between algorithms at runtime. Each algorithm maintains its own state and advances one step at a time, allowing the visualizer to render the exploration process.
-
-The A* implementation uses Manhattan distance as its heuristic, which works well for grid-based movement without diagonals:
-
-```rust
-fn heuristic(a: (usize, usize), b: (usize, usize)) -> i32 {
-    (a.0 as i32 - b.0 as i32).abs() + (a.1 as i32 - b.1 as i32).abs()
-}
-```
 
 ## Procedural Cave Generation
 

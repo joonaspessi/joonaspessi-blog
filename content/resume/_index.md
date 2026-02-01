@@ -5,6 +5,7 @@ title: "Resume"
 ## Experience
 
 ### Senior Software Development Engineer — Mapbox
+
 *Feb 2024 — Present*
 
 Basemap Team. Building the foundational map layer for 700M+ monthly users. Maintaining data pipelines and infrastructure serving clients like Toyota, Rivian, BMW, and Y!Japan.
@@ -14,6 +15,7 @@ Basemap Team. Building the foundational map layer for 700M+ monthly users. Maint
 - Part of 24/7 on-call rotation for mission-critical services
 
 ### Cargotec
+
 *May 2020 — Feb 2024*
 
 Cloud Architect, Lead Engineer
@@ -25,6 +27,7 @@ Cloud Architect, Lead Engineer
 - Hands-on development with Python and TypeScript
 
 ### Futurice
+
 *Jun 2014 — May 2020*
 
 Cloud Solutions Architect, Project Lead, Software Specialist
@@ -36,6 +39,7 @@ Cloud Solutions Architect, Project Lead, Software Specialist
 - Building complex industrial process automation platform
 
 ### Software Designer — Wapice Ltd
+
 *Mar 2012 — May 2014*
 
 - Web-based graphical flow programming environment for IoT
@@ -45,6 +49,7 @@ Cloud Solutions Architect, Project Lead, Software Specialist
 ## Education
 
 ### Tampere University of Technology
+
 **Master's Degree**, Automation and Software Engineering Technology (2012 — 2014)
 *Grade: With distinction*
 

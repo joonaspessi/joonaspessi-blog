@@ -1,0 +1,10 @@
+{
+  "name": "joonaspessi-blog",
+  "private": true,
+  "scripts": {
+    "lint": "markdownlint-cli2 'content/**/*.md'"
+  },
+  "devDependencies": {
+    "markdownlint-cli2": "^0.17.0"
+  }
+}

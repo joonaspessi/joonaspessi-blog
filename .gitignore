@@ -3,6 +3,9 @@ public/
 resources/
 .hugo_build.lock
 
+# Node
+node_modules/
+
 # macOS
 .DS_Store
 

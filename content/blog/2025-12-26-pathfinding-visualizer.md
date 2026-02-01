@@ -5,7 +5,7 @@ description: "An interactive playground for exploring how different pathfinding 
 author: "Joonas Pessi"
 ---
 
-I recently built a pathfinding visualizer in Rust as a way to better understand how different graph traversal algorithms work and also to memorize their implementation. There's something satisfying about watching an algorithm explore a maze in real-time, seeing the frontier expand as it searches for the optimal path.
+I recently built a pathfinding visualizer in Rust as a way to better understand how different graph traversal algorithms work. There's something satisfying about watching an algorithm explore a maze in real-time, seeing the frontier expand as it searches for the optimal path.
 
 You can try it yourself at [joonaspessi.github.io/path_finding](https://joonaspessi.github.io/path_finding/).
 
@@ -48,12 +48,10 @@ To make the visualizer more interesting, I added a cellular automata-based cave 
 
 The smoothing step uses a simple rule: if a cell has more than 4 wall neighbors, it becomes a wall; otherwise it becomes empty. After a few iterations, this produces organic-looking cave systems.
 
-As a note these caves were probably not the best ones to visualize different algorithms as they ended up being quite narrow and in many cases even the naive BFS in comparison to A* didn't make that much difference in speed.
-
 ## Technical Stack
 
-The project is built with macroquad, a simple Rust game library that compiles to both native and WASM. This made it easy to deploy to GitHub Pages while keeping the development experience straightforward locally using native rust build.
+The project is built with macroquad, a simple Rust game library that compiles to both native and WebAssembly. This made it easy to deploy to GitHub Pages while keeping the development experience straightforward.
 
 The controls are simple: left-click to toggle walls, right-click to place start and end points, Tab to switch algorithms, and Space to run the pathfinding. Press G to generate a new random cave.
 
-Building this visualizer was a great way to internalize how these algorithms actually behave, beyond just reading about their time complexity.
+Building this visualizer was a great way to internalize how these algorithms actually behave, beyond just reading about their time complexity. Seeing A* laser-focus toward the goal while Dijkstra methodically explores everything makes the theoretical advantages tangible.

@@ -2,6 +2,6 @@
 title: "Joonas Pessi"
 ---
 
-I'm Joonas Pessi, a software developer interested in building things and studying the theory behind optimal solutions.
+I'm Joonas Pessi, a software developer who enjoys building things and exploring the theory behind elegant solutions.
 
-This site is where I write about programming, share projects, and occasionally dive into topics that catch my attention.
+Here I write about programming and things that have catched by curiosity. This blog is merely a tool to document my own thinking and forcing myself to write something done.

@@ -9,6 +9,8 @@ I recently built a pathfinding visualizer in Rust as a way to better understand 
 
 You can try it yourself at [joonaspessi.github.io/path_finding](https://joonaspessi.github.io/path_finding/).
 
+![Pathfinding visualizer showing A* algorithm exploring a procedurally generated cave](/images/pathfinding.png)
+
 ## The Algorithms
 
 The visualizer implements five different pathfinding algorithms, each with its own exploration strategy:
